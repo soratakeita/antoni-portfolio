@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antoni Kreatif - MV Commissions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+    body {
+      position: relative;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    .background-gradient {
+      position: fixed;
+      inset: 0;
+      z-index: -1; /* Ensure it stays behind other content */
+    }
+  </style>
+</head>
+<body class="bg-[#21212E]">
+  <!-- Background Gradient with Blur -->
+  <div class="background-gradient">
+    <div class="absolute -top-10 -left-10 w-72 h-72 bg-purple-500 rounded-full blur-3xl opacity-40"></div>
+    <div class="absolute top-20 right-10 w-96 h-96 bg-pink-500 rounded-full blur-3xl opacity-40"></div>
+    <div class="absolute bottom-10 left-20 w-80 h-80 bg-blue-500 rounded-full blur-3xl opacity-40"></div>
+  </div>
+
+<!-- Navigasi -->
+<nav class="fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-4xl bg-[#B3E0FB] py-3 rounded-full font-semibold shadow-md z-50 mt-10">
+    <div class="flex justify-between items-center px-8">
+      <a class="hover:text-cyan-700" href="/">Antoni Kreatif</a>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-cyan-700 focus:outline-none">☰</button>
+      </div>
+      <ul class="hidden md:flex flex-row gap-x-8">
+        <li><a class="hover:text-cyan-700" href="index.html">Home</a></li>
+        <li><a class="hover:text-cyan-700" href="#about">About</a></li>
+        <li><a class="hover:text-cyan-700" href="term-of-service.html">T.O.S</a></li>
+        <li><a class="hover:text-cyan-700" href="#portfolio">Portfolio</a></li>
+      </ul>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden bg-white rounded-lg shadow-md mt-3 absolute right-0 w-48">
+      <ul class="flex flex-col gap-y-2 p-2">
+        <li><a class="block text-center hover:text-cyan-700" href="index.html">Home</a></li>
+        <li><a class="block text-center hover:text-cyan-700" href="#about">About</a></li>
+        <li><a class="block text-center hover:text-cyan-700" href="term-of-service.html">T.O.S</a></li>
+        <li><a class="block text-center hover:text-cyan-700" href="#portfolio">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+  
+    menuBtn.addEventListener('click', () => {
+      // Toggle the menu visibility
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+<!-- Main Content -->
+<div class="min-h-screen pt-24 flex items-center justify-center text-white"> <!-- Add min-h-screen and flex to center content -->
+    <div class="flex flex-col md:flex-row max-w-5xl mx-auto items-center px-8 lg:px-12">
+      <section class="flex flex-col text-center md:text-left py-10">
+        <h1 class="text-[#7CD3FF] text-[20px] md:text-[24px] font-['Archivo_Black'] leading-tight">Antoni Kreatif</h1>
+        <h1 class="text-[#7CD3FF] text-[48px] md:text-[68px] font-['Archivo_Black'] leading-tight">
+          MOTION GRAPHIC AND VIDEO EDITOR
+        </h1>
+        <ul class="flex flex-col md:flex-row justify-center md:justify-between mt-6 gap-y-4 md:gap-y-0">
+          <li class="text-white text-lg md:text-xl">5+ Years of experience</li>
+          <li class="text-white text-lg md:text-xl">40+ Completed Projects</li>
+        </ul>
+      </section>
+  
+      <img class="w-1/2 md:w-1/3 hidden md:block" src="1.png" alt="Profile Image" />
+    </div>
+  </div>
+  
+  
+
+<!-- Service Section -->
+<section class="max-w-5xl mx-auto py-10 text-center">
+    <h1 class="text-[#7CD3FF] font-bold text-[24px] mb-6 font-['Archivo_Black']">SERVICES</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Simple Service Card -->
+      <div class="bg-[#2C283E] p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-200">
+        <h2 class="text-xl text-white font-semibold mb-2 text-left">MV Simple</h2>
+        <p class="text-lg font-bold text-[#7CD3FF] text-left">Start From $20 / 200K IDR</p>
+        <ul class="text-white list-disc list-inside ml-4 text-left">
+          <li>Just Video & Lyric</li>
+          <li>No Effect</li>
+          <li>No Movement Camera</li>
+        </ul>
+        <a href="https://vgen.co/antoni_kreatif/service/vtuber-music-video-super-simple/1537b856-f868-4add-b252-ee6baf4c607c"><button class="mt-4 px-4 py-2 bg-[#7CD3FF] text-black rounded-md hover:bg-[#5BA0D2]">Order Now</button></a>
+      </div>
+  
+      <!-- Semi Complex Service Card -->
+      <div class="bg-[#2C283E] p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-200">
+        <h2 class="text-xl text-white font-semibold mb-2 text-left">MV Semi Complex</h2>
+        <p class="text-lg font-bold text-[#7CD3FF] text-left">Start From $50 / 500K IDR</p>
+        <ul class="text-white list-disc list-inside ml-4 text-left">
+          <li>Simple Motion</li>
+          <li>Text Animation</li>
+          <li>Simple Effect</li>
+        </ul>
+        <a href="https://vgen.co/antoni_kreatif/service/semi-complex-music-video-mv-vtuber-and-utaite/fb7f3b1f-927f-4e5e-a7eb-83daa43a55ab"><button class="mt-4 px-4 py-2 bg-[#7CD3FF] text-black rounded-md hover:bg-[#5BA0D2]">Order Now</button></a>
+      </div>
+  
+      <!-- Complex Service Card -->
+      <div class="bg-[#2C283E] p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-200">
+        <h2 class="text-xl text-white font-semibold mb-2 text-left">MV Complex</h2>
+        <p class="text-lg font-bold text-[#7CD3FF] text-left">Start From $100 / 800K IDR</p>
+        <ul class="text-white list-disc list-inside ml-4 text-left">
+          <li>Advance Motion</li>
+          <li>Text Animation</li>
+          <li>Camera Movement</li>
+        </ul>
+        <a href="https://vgen.co/antoni_kreatif/service/complex-music-video-mv-vtuber-and-utaite/13c9bdef-ba3d-4858-af26-70cce1e220ad"><button class="mt-4 px-4 py-2 bg-[#7CD3FF] text-black rounded-md hover:bg-[#5BA0D2]">Order Now</button></a>
+      </div>
+  
+      <!-- Complex Service Card -->
+      <div class="bg-[#2C283E] p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-200">
+        <h2 class="text-xl text-white font-semibold mb-2 text-left">PV / Teaser</h2>
+        <p class="text-lg font-bold text-[#7CD3FF] text-left">Start From $50 / 500K IDR</p>
+        <ul class="text-white list-disc list-inside ml-4 text-left">
+            <li>30 seconds</li>
+          </ul>
+        <a href="https://vgen.co/antoni_kreatif/service/pv-debut-teaser-or-promotion-video-for-vtuber-streamer/70648005-eb7f-4c1a-92ed-ccdb3a69271f"><button class="mt-4 px-4 py-2 bg-[#7CD3FF] text-black rounded-md hover:bg-[#5BA0D2]">Order Now</button></a>
+      </div>
+
+        
+      <!-- Complex Service Card -->
+      <div class="bg-[#2C283E] p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-200">
+        <h2 class="text-xl text-white font-semibold mb-2 text-left">Short Video</h2>
+        <p class="text-lg font-bold text-[#7CD3FF] text-left">Start From $15 / 50K IDR</p>
+        <ul class="text-white list-disc list-inside ml-4 text-left">
+            <li>Tiktok, youtube short format</li>
+            <li>Vertical Video</li>
+          </ul>
+        <a href="https://www.foriio.com/works/1410957"><button  class="mt-4 px-4 py-2 bg-[#7CD3FF] text-black rounded-md hover:bg-[#5BA0D2]">Order Now</button></a>
+      </div>
+
+
+      
+    </div>
+  </section>
+
+    <!-- Portfolio Section -->
+    <section class="max-w-5xl mx-auto font-['Archivo_Black'] items-center px-8 lg:px-0 text-center">
+      <h1 id="portfolio" class="text-[#7CD3FF] font-['Archivo_Black'] text-[24px]">PORTFOLIO</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-7">
+        <iframe class="w-full h-60" src="https://www.youtube.com/embed/x8vCUmvli_w" frameborder="0" allowfullscreen></iframe>
+        <iframe class="w-full h-60" src="https://www.youtube.com/embed/Vfngslhf_DQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="w-full h-60" src="https://www.youtube.com/embed/CXK4LtoUYo8" frameborder="0" allowfullscreen></iframe>
+        <iframe class="w-full h-60" src="https://www.youtube.com/embed/_UdLvMOTK5k" frameborder="0" allowfullscreen></iframe>
+        <iframe class="w-full h-60" src="https://www.youtube.com/embed/vlbZ5n1LiPk" frameborder="0" allowfullscreen></iframe>
+        <iframe class="w-full h-60" src="https://www.youtube.com/embed/JJduoCjVBhw" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="mt-10 text-center">
+        <a class="bg-white px-8 py-3 rounded-full hover:bg-black hover:text-white" href="https://fori.io/antoni-kreatif">More</a>
+      </div>
+    </section>
+<!-- Social Media Section -->
+<section class="max-w-5xl mx-auto py-10 font-['Archivo_Black'] text-center">
+    <h1 class="text-[#7CD3FF] font-['Archivo_Black'] text-[24px]">SOCIAL MEDIA</h1>
+    <ul class="flex flex-col md:flex-row items-center mt-7 gap-5 md:gap-10 justify-center">
+      <li class="flex flex-row bg-white px-4 py-3 rounded-md gap-x-5 md:gap-x-8 items-center h-20 w-full max-w-[600px]">
+        <div class="flex flex-col text-left flex-grow">
+          <span class="mt-1">X</span> <!-- Menambahkan margin top kecil untuk jarak lebih kecil -->
+          <p class="font-sans mt-1">x.com/antoni_kreatif</p> <!-- Mengurangi margin atau padding atas -->
+        </div>
+        <a class="bg-black text-white px-6 py-2 rounded-full hover:bg-cyan-500" href="">Follow</a>
+      </li>
+      <li class="flex flex-row bg-[#CEFF9C] px-4 py-3 rounded-md gap-x-5 md:gap-x-8 items-center h-20 w-full max-w-[600px]">
+        <div class="flex flex-col text-left flex-grow">
+          <span class="mt-1">V-Gen</span> <!-- Menambahkan margin top kecil -->
+          <p class="font-sans mt-1">vgen.co/antoni_kreatif</p> <!-- Mengurangi margin atau padding atas -->
+        </div>
+        <a class="bg-black text-white px-6 py-2 rounded-full hover:bg-cyan-500" href="https://vgen.co/antoni_kreatif">Follow</a>
+      </li>
+    </ul>
+    <ul class="flex flex-col md:flex-row items-center mt-7 gap-5 md:gap-10 justify-center">
+      <li class="flex flex-row bg-[#FF3C3F] px-4 py-3 rounded-md gap-x-5 md:gap-x-8 items-center h-20 w-full max-w-[600px] text-white">
+        <div class="flex flex-col text-left flex-grow">
+          <span class="mt-1">Youtube</span> <!-- Menambahkan margin top kecil -->
+          <p class="font-sans mt-1">@antonikreatif</p> <!-- Mengurangi margin atau padding atas -->
+        </div>
+        <a class="bg-white text-[#FF3C3F] px-6 py-2 rounded-full hover:bg-black" href="https://www.youtube.com/@antonikreatif/">Subscribe</a>
+      </li>
+      <li class="flex flex-row bg-[#295BFF] text-white px-4 py-3 rounded-md gap-x-5 md:gap-x-8 items-center h-20 w-full max-w-[600px]">
+        <div class="flex flex-col text-left flex-grow">
+          <span class="mt-1">Behance</span> <!-- Menambahkan margin top kecil -->
+          <p class="font-sans mt-1">behance.net/antonikreatif/</p> <!-- Mengurangi margin atau padding atas -->
+        </div>
+        <a class="bg-black text-white px-6 py-2 rounded-full hover:bg-cyan-500" href="https://www.behance.net/antonikreatif/">Follow</a>
+      </li>
+    </ul>
+    <ul class="flex flex-col md:flex-row items-center mt-7 gap-5 md:gap-10 justify-center">
+        <li class="flex flex-row bg-white px-4 py-3 rounded-md gap-x-5 md:gap-x-8 items-center h-20 w-full max-w-[600px] text-black">
+          <div class="flex flex-col text-left flex-grow">
+            <span class="mt-1">Trakteer</span> <!-- Menambahkan margin top kecil -->
+            <p class="font-sans mt-1">trakteer.id/antonikreatif</p> <!-- Mengurangi margin atau padding atas -->
+          </div>
+          <a class="bg-black text-white px-6 py-2 rounded-full hover:bg-[#FF3C3F]" href="https://trakteer.id/antonikreatif">Follow</a>
+        </li>
+        <li class="flex flex-row bg-white px-4 py-3 rounded-md gap-x-5 md:gap-x-8 items-center h-20 w-full max-w-[600px] text-black">
+            <div class="flex flex-col text-left flex-grow">
+              <span class="mt-1">Ko-Fi</span> <!-- Menambahkan margin top kecil -->
+              <p class="font-sans mt-1">Ko-fi.com/antonikreatif</p> <!-- Mengurangi margin atau padding atas -->
+            </div>
+            <a class="bg-black text-white px-6 py-2 rounded-full hover:bg-[#FF3C3F]" href="https://ko-fi.com/antonikreatif">Follow</a>
+          </li>
+      </ul>
+  </section>
+  
+<!-- Client Section --
+<section class="max-w-4xl mx-auto py-10">
+    <h1 class="text-[#7CD3FF] font-bold text-3xl text-center mb-6">Our Clients</h1>
+    <div class="flex justify-center overflow-x-auto">
+        <div class="flex whitespace-nowrap">
+            <div class="inline-block mx-4">
+                <img src="image/akio.png" alt="Client 1" class="h-32 w-auto object-contain">
+            </div>
+            <div class="inline-block mx-4">
+                <img src="image/pixela.png" alt="Client 2" class="h-32 w-auto object-contain">
+            </div>
+            <div class="inline-block mx-4">
+                <img src="image/voca.png" alt="Client 3" class="h-32 w-auto object-contain">
+            </div>
+            <div class="inline-block mx-4">
+                <img src="image/ykz.png" alt="Client 4" class="h-32 w-auto object-contain">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="max-w-5xl mx-auto py-10">
+    <h1 class="text-[#7CD3FF] font-bold text-3xl text-center mb-6">About Me</h1>
+    
+    <p class="text-white text-lg mb-4">
+      Hello! My name is <strong>Antoni Kreatif</strong>, a Motion Graphic and Video Editor based in 
+      <strong>Sumatera Barat, Indonesia</strong>.
+    </p>
+    
+    <p class="text-white text-lg mb-4">
+      I work on commissions from VTubers, creating music videos, debut teasers, and other related projects.
+    </p>
+    
+    <p class="text-white text-lg">
+      For contact or other inquiries regarding serious work, you can reach me on 
+      <a href="https://twitter.com/yourprofile" class="text-[#7CD3FF] underline">Twitter</a> 
+      or my other social media.
+    </p>
+  </section>
+  
+  <style>
+    .text-[#7CD3FF] {
+      color: #7CD3FF;
+    }
+    .text-[#7CD3FF] {
+      color: #7CD3FF; /* Warna untuk link */
+    }
+  </style>
+
+
+
+    <!-- Footer -->
+    <footer class="flex flex-col max-w-5xl mx-auto justify-between item-center mt-10 bg-[#2C283E] py-3 rounded-xl px-12 py-8 mb-10 gap-y-1 text-white">
+      <p class="font-['Archivo_Black']">Antoni Kreatif</p>
+      <p class="font-sans">Music Video Commission</p><br><hr><br>
+      <p class="text-center">Copyright © 2022 - 2025 Antoni Kreatif</p>
+    </footer>
+  </div>
+</body>
+</html>

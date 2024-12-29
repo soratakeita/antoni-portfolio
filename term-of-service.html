@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antoni Kreatif - terms of services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+    body {
+      position: relative;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    .background-gradient {
+      position: fixed;
+      inset: 0;
+      z-index: -1; /* Ensure it stays behind other content */
+    }
+  </style>
+</head>
+<body class="bg-[#21212E]">
+  <!-- Background Gradient with Blur -->
+  <div class="background-gradient">
+    <div class="absolute -top-10 -left-10 w-72 h-72 bg-purple-500 rounded-full blur-3xl opacity-40"></div>
+    <div class="absolute top-20 right-10 w-96 h-96 bg-pink-500 rounded-full blur-3xl opacity-40"></div>
+    <div class="absolute bottom-10 left-20 w-80 h-80 bg-blue-500 rounded-full blur-3xl opacity-40"></div>
+  </div>
+
+<!-- Navigasi -->
+<nav class="fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-4xl bg-[#B3E0FB] py-3 rounded-full font-semibold shadow-md z-50 mt-10">
+    <div class="flex justify-between items-center px-8">
+      <a class="hover:text-cyan-700" href="/">Antoni Kreatif</a>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-cyan-700 focus:outline-none">☰</button>
+      </div>
+      <ul class="hidden md:flex flex-row gap-x-8">
+        <li><a class="hover:text-cyan-700" href="index.html">Home</a></li>
+        <li><a class="hover:text-cyan-700" href="index.html#about">About</a></li>
+        <li><a class="hover:text-cyan-700" href="term-of-service.html">T.O.S</a></li>
+        <li><a class="hover:text-cyan-700" href="index.html#portfolio">Portfolio</a></li>
+      </ul>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden bg-white rounded-lg shadow-md mt-3 absolute right-0 w-48">
+      <ul class="flex flex-col gap-y-2 p-2">
+        <li><a class="block text-center hover:text-cyan-700" href="index.html">Home</a></li>
+        <li><a class="block text-center hover:text-cyan-700" href="index.html#about">About</a></li>
+        <li><a class="block text-center hover:text-cyan-700" href="term-of-service.html">T.O.S</a></li>
+        <li><a class="block text-center hover:text-cyan-700" href="index.html#porfolio">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+  
+    menuBtn.addEventListener('click', () => {
+      // Toggle the menu visibility
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+<!-- Terms of Service Section -->
+<section class="max-w-4xl mx-auto py-10 mt-20">
+    <h1 class="text-[#7CD3FF] font-bold text-4xl text-center mb-6">Terms of Service</h1>
+    
+    <h2 class="text-white mb-4">General Rules</h2>
+    <ul class="text-white list-disc mb-6 pl-5">
+      <li class="ml-5"><strong class="text-[#7CD3FF]">Assets:</strong> I do not provide custom drawings. Clients must supply all visual assets, including illustrations and character designs. I may create additional elements or use stock assets if needed.</li>
+      <li class="ml-5"><strong class="text-[#7CD3FF]">Payment:</strong> Accepted via PayPal, BNI, or GO-PAY. Full payment is preferred, or 50% upfront with the rest paid later. Payment plans are negotiable.</li>
+      <li class="ml-5"><strong class="text-[#7CD3FF]">Updates:</strong> Feel free to ask about progress anytime. I’ll respond within 24 hours.</li>
+      <li class="ml-5"><strong class="text-[#7CD3FF]">Privacy:</strong> I may stream my work process. Let me know in advance if your project must remain private.</li>
+      <li class="ml-5"><strong class="text-[#7CD3FF]">Turnaround Time:</strong> Projects typically take 1–30 days. Please inform me of deadlines.</li>
+      <li class="ml-5"><strong class="text-[#7CD3FF]">Revisions:</strong> Includes 2 free revisions. Extra revisions may incur additional charges.</li>
+      <li class="ml-5"><strong class="text-[#7CD3FF]">Delivery:</strong> Final files will be shared via Google Drive.</li>
+    </ul>
+  
+    <h2 class="text-white mb-4">Terms & Conditions</h2>
+    <ul class="text-white list-disc mb-6 pl-5">
+      <li class="ml-5"><strong class="text-[#7CD3FF]">Pricing:</strong> Rates vary based on complexity and requests.</li>
+      <li class="ml-5"><strong class="text-[#7CD3FF]">Portfolio Use:</strong> I may showcase the final project as a portfolio sample unless confidentiality is requested.</li>
+      <li class="ml-5"><strong class="text-[#7CD3FF]">Rush Orders:</strong> Charged at 2x the standard price.</li>
+    </ul>
+  
+    <p class="text-white">
+      For any questions, feel free to reach out before placing an order. Thank you for choosing Antoni Kreatif—I look forward to working with you!
+    </p>
+  </section>
+  
+  <style>
+    .text-[#7CD3FF] {
+      color: #7CD3FF;
+    }
+  </style>
+    <!-- Footer -->
+    <footer class="flex flex-col max-w-5xl mx-auto justify-between item-center mt-10 bg-[#2C283E] py-3 rounded-xl px-12 py-8 mb-10 gap-y-1 text-white">
+      <p class="font-['Archivo_Black']">Antoni Kreatif</p>
+      <p class="font-sans">Music Video Commission</p><br><hr><br>
+      <p class="text-center">Copyright © 2022 - 2024 Antoni Kreatif</p>
+    </footer>
+  </div>
+</body>
+</html>
